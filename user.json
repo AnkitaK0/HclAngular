@@ -1,0 +1,22 @@
+{
+  "credential": [
+    {
+      "id": 1,
+      "username": "neha",
+      "password": "",
+      "loginAs": "librarian"
+    },
+    {
+      "id": 2,
+      "username": "ankita",
+      "password": "",
+      "loginAs": "member"
+    },
+    {
+      "id": 3,
+      "username": "gauri",
+      "password": "",
+      "loginAs": "librarian"
+    }
+  ]
+}

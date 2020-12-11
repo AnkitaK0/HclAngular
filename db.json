@@ -1,0 +1,135 @@
+{
+  "Users": [
+    {
+      "id": "001",
+      "Book_title": "All Passion Spent",
+      "Book_auther": "Vita Sackville-West",
+      "NumberOfBooks": 10
+    },
+    {
+      "id": "002",
+      "Book_title": "All the King's Men",
+      "Book_auther": "Robert Penn Warren",
+      "NumberOfBooks": 40
+    },
+    {
+      "id": "003",
+      "Book_title": "Alone on a Wide, Wide Sea",
+      "Book_auther": "Michael Morpurgo",
+      "NumberOfBooks": 20
+    },
+    {
+      "id": "004",
+      "Book_title": "An Acceptable Time",
+      "Book_auther": "Madeleine L'Engle",
+      "NumberOfBooks": 5
+    },
+    {
+      "id": "006",
+      "Book_title": "Endless Night",
+      "Book_auther": "Agatha Christie",
+      "NumberOfBooks": 8
+    },
+    {
+      "id": "007",
+      "Book_title": "Fair Stood the Wind for France",
+      "Book_auther": "H. E. Bates",
+      "NumberOfBooks": 0
+    },
+    {
+      "id": "0076",
+      "Book_title": "How Sleep the Brave",
+      "Book_auther": "H. E. Bates",
+      "NumberOfBooks": 9
+    },
+    {
+      "id": "0125",
+      "Book_title": "Cabbages and Kings",
+      "Book_auther": "O. Henry",
+      "NumberOfBooks": 3
+    },
+    {
+      "id": "5885c",
+      "Book_title": "I Will Fear No Evil",
+      "Book_auther": "Robert A. Heinlein",
+      "NumberOfBooks": 7
+    },
+    {
+      "id": "78es1",
+      "Book_title": "The Lathe of Heaven",
+      "Book_auther": "Ursula K. Le Guin",
+      "NumberOfBooks": 12
+    },
+    {
+      "id": "c1t45",
+      "Book_title": "Look to Windward",
+      "Book_auther": "Iain M. Banks",
+      "NumberOfBooks": 73
+    },
+    {
+      "id": "ty441",
+      "Book_title": "The Road Less Traveled",
+      "Book_auther": "M. Scott Peck",
+      "NumberOfBooks": 31
+    },
+    {
+      "id": "tut61",
+      "Book_title": "That Hideous Strength",
+      "Book_auther": "C. S. Lewis",
+      "NumberOfBooks": 39
+    },
+    {
+      "id": "io56",
+      "Book_title": "Wildfire at Midnight",
+      "Book_auther": "Mary Stewart",
+      "NumberOfBooks": 28
+    },
+    {
+      "id": "ty441",
+      "Book_title": "Vanity Fair",
+      "Book_auther": "William Makepeace Thackeray",
+      "NumberOfBooks": 31
+    },
+    {
+      "id": "11cd5",
+      "Book_title": "Stranger in a Strange Land",
+      "Book_auther": "Robert A. Heinlein",
+      "NumberOfBooks": 51
+    },
+    {
+      "id": "654",
+      "Book_title": "In world of bitch",
+      "Book_auther": "D.Sackville-West",
+      "NumberOfBooks": "7"
+    },
+    {
+      "id": "1556",
+      "Book_title": "Ajkjhj",
+      "Book_auther": "Vita Sackville-West",
+      "NumberOfBooks": "2"
+    },
+    {
+      "id": "667",
+      "Book_title": "Dark side",
+      "Book_auther": "Vita corvat",
+      "NumberOfBooks": "3"
+    }
+  ],
+  "credential": [
+    {
+      "id": 4,
+      "username": "Ashu",
+      "password": "ash",
+      "loginAs": "member"
+    },
+    {
+      "id": 5,
+      "username": "Rama",
+      "password": "123rh",
+      "loginAs": "librarian"
+    },
+    {
+      "id": 6
+    }
+  ]
+}

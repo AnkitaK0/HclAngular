@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <div class='container' > 
+   
+    
+     <form  class="login-form" [formGroup]="formGroup" (ngSubmit)="loginProcess()">
+      
+         Username<input matInput type="text"placeholder="Username" formControlName="username">
+      
+  
+      
+        Password<input matInput type="password" formControlName="password">
+     
+      <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+            <input type="radio" value="member" formControlName="loginAs">Member
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" value="librarian" formControlName="loginAs">Librarian
+        </label>
+    </div>
+      <button mat-raised-button type="submit" class="mt-5" color="primary">Login</button>
+     </form>
+   
+ </div>

@@ -1,0 +1,94 @@
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <div>
+    <div class="navbar navbar-inverse" style="height:2cm">    
+        <nav class="navbar navbar-light bg-secondary" style="text-align:right" >    
+          <a class="navbar-brand" >
+            <img src="assets/green.png" width="50" height="50">
+          </a>
+<a class="navbar-brand" style="text-align:left" ><h1 style="color: rgb(173, 224, 131);">E-Library</h1></a>   
+          
+          <!-- <button class="registerbtn" (click)="logout()" value="Logout"></button>   -->
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" 
+          (click)="logout()">Logout</button> 
+          <div class="collapse navbar-collapse">    
+            <ul class="nav navbar-nav" id=menu>    
+  
+              <li class="nav-item">    
+                  <a class="nav-link" routerLink="" style="color:rgb(253, 253, 253);">Home</a>    
+                </li> 
+                   
+                    
+                
+              
+              
+          </ul>    
+        </div>    
+      </nav>
+       
+            
+      </div>  
+      
+  </div> 
+    <div class='container'>
+      
+ <h1>Availabel Books</h1>
+ <form>
+ <input class="form-control" type="text" name="Book_title" [(ngModel)]="Book_title" (ngModelChange)="Search()"
+ placeholder="Enter title here to search"></form>
+ <br><table class="table table-bordered">
+   <thead>
+     <tr>
+       <th style = "font-size: 20px;">Book_id</th>
+       <th style = "font-size: 20px;">Book_title</th>
+       <th style = "font-size: 20px;">Book_auther</th>
+       <th style = "font-size: 20px;">NumberOfBooks</th>
+       <th style = "font-size: 20px;">Action</th>
+     </tr>
+   </thead>
+     <tbody>
+     <tr *ngFor= "let user of csers | paginate: { itemsPerPage: 5, currentPage: p }">
+       <td style = "font-size: 20px;">{{user.id}} </td>
+       <td style = "font-size: 20px;">{{user.Book_title}}</td>
+       <td style = "font-size: 20px;">{{user.Book_auther}}</td>
+       <td style = "font-size: 20px;">{{user.NumberOfBooks}}</td>
+       <td>
+        <button type="button" class="btn btn-danger" (click)="deleteRow(user.id)">Delete Book</button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-primary" (click)="update(user.id)">Update Book Details</button>&nbsp;&nbsp;
+        <button type="button" class="btn btn-success" (click)="add(user)">Add Book</button>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal" (click)="getData(user)">Get Book Details</button> 
+       </td>
+       
+     </tr>
+   </tbody>
+    
+ </table>
+
+ <pagination-controls (pageChange)= "p = $event"></pagination-controls> 
+
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Book_id : {{id}}</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <p> Author : {{Book_auther}}</p>
+            <p> Title : {{Book_title}}</p>
+            <p > NumberOfBooks : {{NumberOfBooks}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+</div>
+ 
